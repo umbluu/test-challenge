@@ -181,7 +181,6 @@ a {
     margin-right: 0.8rem;
     float: left;
     border-radius: 50%;
-    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
     width: 36px;
     height: 36px;
     padding: 8px;
@@ -236,9 +235,7 @@ a {
         grid-template-areas: 
         "aside"
         "cards"
-    }
-
-    
+    } 
 }
 
 @media screen and (max-width: 600px) {
