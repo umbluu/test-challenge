@@ -1,0 +1,154 @@
+/* Global Styling */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #e6e9ed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Arial', serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 2em;
+}
+
+h1, h2 {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+p, span {
+    font-weight: 400;
+}
+
+hr {
+    border: 0.5px solid #bfc2c6;
+}
+
+/* Navigation */
+
+header {
+    background-color: #3351d6;
+    margin-bottom: 20px;
+}
+
+nav {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #3351d6;
+    height: 50px;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    height: 100%;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 0px;
+    overflow: hidden;
+    float: left;
+}
+
+li a {
+    margin-right: 1rem;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul li .icon {
+    font-size: 20px;
+    display: none;
+    padding-top: 0;
+}
+
+.fa {
+    margin-right: 0.6rem;
+}
+
+.mobileNav {
+    font-size: 16px;
+}
+
+.active {
+    background-color: #2f46c0;
+  }
+
+/* Cards */
+
+.card {
+    background-color: #fff;
+}
+
+.card-thumbnail {
+    max-width: 100%;
+}
+
+.card-block {
+    padding: 0 1rem;
+}
+
+a { 
+    color: inherit;
+}
+
+.card-author {
+    color: #868e96;
+}
+
+.card-block {
+    padding: 0 10rem;
+}
+
+.card-body {
+    line-height: 1.4rem;
+}
+
+.card-likes, .hashtags {
+    color: #868e96;
+    font-size: 14px;
+}
+
+.card-likes p {
+    display: inline-block;
+}
+
+
+/***** Media Queries *****/
+
+@media (max-width: 769px) {
+    .container {
+        margin: 1em;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "cards"
+    }
+
+    .card-block {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    ul li a {display: none;}
+    ul li a.icon {
+      float: right;
+      display: block;
+    }
+  }

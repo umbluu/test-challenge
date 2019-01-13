@@ -1,0 +1,250 @@
+/* General Styling */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #e6e9ed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2em;
+}
+
+h1, h2 {
+    font-weight: 500;
+    font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
+}
+
+p, span {
+    font-weight: 400;
+    font-family: 'Arial', serif;
+}
+
+hr {
+    border: 0.5px solid #bfc2c6;
+}
+
+/* Navigation */
+
+header {
+    background-color: #3351d6;
+    margin-bottom: 20px;
+}
+
+nav {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #3351d6;
+    height: 50px;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    height: 100%;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 0px;
+    overflow: hidden;
+    float: left;
+}
+
+li a {
+    margin-right: 1rem;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul li .icon {
+    font-size: 20px;
+    display: none;
+    padding-top: 0;
+}
+
+.fa {
+    margin-right: 0.6rem;
+}
+
+.mobileNav {
+    font-size: 16px;
+}
+
+.active {
+    background-color: #2f46c0;
+  }
+
+/* Cards */
+
+.cards {
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+.card-thumbnail {
+    max-width: 100%;
+}
+
+.card-block {
+    padding: 0 1rem;
+}
+
+a { 
+    color: inherit;
+}
+
+.card-author {
+    color: #868e96;
+}
+
+.card-body {
+    line-height: 1.4rem;
+}
+
+.card-likes, .hashtags {
+    color: #868e96;
+    font-size: 14px;
+}
+
+.card-likes p {
+    display: inline-block;
+}
+
+/* Aside */
+
+.section  {
+    overflow: hidden;
+}
+
+.section-item {
+    margin-bottom: 2rem;
+}
+
+.section-content {
+    display: block;
+    vertical-align: middle;
+    font-size: 14px;
+    padding-top: 0.5rem;
+    
+}
+
+.section-content p {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 0;
+    margin-left: 2rem;
+    margin-bottom: 4px;
+}
+
+.section-heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+}
+
+.red {
+    color: #e03131;
+}
+
+.green {
+    color: #2f9e44;
+}
+
+.date {
+    color: #868e96;
+    font-size: 14px;
+}
+
+.numberCircle {
+    margin-right: 0.8rem;
+    float: left;
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    border: 4px solid #adefdd;
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+}
+
+.numberCircle > :first-child {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.numberCircle > :nth-child(2) {
+    font-size: 12px;
+}
+
+.imageCircle img {
+    float: left;
+    margin-right: 0.8rem;
+    margin-left: 0.6rem;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.comment {
+    margin-bottom: 0.8rem;
+    padding-left: 0.5rem;
+    border-left: 3px solid #1863ba;
+}
+
+.comment p {
+    margin: 0;
+    font-size: 12px;
+   
+}
+
+.comment-meta {
+    font-size: 12px;
+    color: #868e96;
+}
+
+
+/***** Media Queries *****/
+
+@media (max-width: 769px) {
+    .container {
+        margin: 1em;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "aside"
+        "cards"
+    }
+
+    
+}
+
+@media screen and (max-width: 600px) {
+    ul li a {display: none;}
+    ul li a.icon {
+      float: right;
+      display: block;
+    }
+  }
